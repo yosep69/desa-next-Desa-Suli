@@ -1,0 +1,29 @@
+{
+  "dataLinkHero": [
+    {
+      "title": "Informasi Publik",
+      "icon": "MegaPhone",
+      "url": ""
+    },
+    {
+      "title": "Perangkat desa",
+      "icon": "Team",
+      "url": "https://www.desasuli.com/aparatur"
+    },
+    {
+      "title": "Produk Desa",
+      "icon": "Box",
+      "url": ""
+    },
+    {
+      "title": "Agenda Desa",
+      "icon": "Papper",
+      "url": ""
+    },
+    {
+      "title": "Potensi Desa",
+      "icon": "Lamp",
+      "url": ""
+    }
+  ]
+}

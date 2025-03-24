@@ -1,0 +1,296 @@
+backend:
+  name: git-gateway
+  branch: Desa-Suli
+media_folder: /public/static/images
+public_folder: /static/images
+publish_mode: editorial_workflow
+local_backend: true
+
+collections:
+  - label: 'News'
+    name: 'news'
+    folder: 'content/news/'
+    extension: 'md'
+    format: 'frontmatter'
+    create: true
+    slug: '{{slug}}'
+    identifier_field: slug
+    summary: '{{title}}'
+    fields:
+      - label: 'Featured Image'
+        name: 'thumbnailImage'
+        widget: 'image'
+        choose_url: true
+        media_library:
+          config:
+            multiple: false
+      - label: 'Title'
+        name: 'title'
+        widget: 'string'
+      - label: 'Publish Date'
+        name: 'publishAt'
+        widget: 'datetime'
+        format: 'DD-MM-YYYY'
+        dateFormat: 'DD-MM-YYYY'
+        timeFormat: false
+      - label: 'Body'
+        name: 'body'
+        widget: 'markdown'
+      - label: 'Meta Title'
+        name: 'metaTitle'
+        widget: 'string'
+      - label: 'Meta Description'
+        name: 'metaDesc'
+        widget: 'text'
+  - label: 'Aparatur'
+    name: 'aparatur'
+    folder: 'content/aparatur/'
+    extension: 'md'
+    format: 'frontmatter'
+    create: true
+    identifier_field: name
+    summary: '{{name}}'
+    fields:
+      - label: 'Featured Image'
+        name: 'thumbnail'
+        widget: 'image'
+        choose_url: true
+        media_library:
+          config:
+            multiple: false
+      - label: 'Name'
+        name: 'name'
+        widget: 'string'
+      - label: 'Position'
+        name: 'position'
+        widget: 'string'
+      - label: 'Body'
+        name: 'body'
+        widget: 'markdown'
+  - label: 'Pages'
+    name: 'pages'
+    editor:
+      preview: false
+    files:
+      - label: Home
+        name: home
+        file: 'src/shared/jsons/dataHome.json'
+        fields:
+          - label: Peta
+            name: peta
+            widget: 'select'
+            default: 'google_maps'
+            options:
+              - { label: 'Google Maps', value: 'google_maps' }
+              - { label: 'Gambar Peta', value: 'gambar_peta' }
+          - label: 'Google Maps'
+            name: google_maps
+            widget: string
+            required: false
+          - label: 'Gambar Peta'
+            name: gambar_peta
+            widget: 'image'
+            choose_url: true
+            media_library: { config: { multiple: false } }
+            required: false
+          - label: About
+            name: about
+            widget: markdown
+          - label: Services
+            name: services
+            widget: list
+            fields:
+              - { label: Title, name: title, widget: string }
+              - { label: Caption, name: subtitle, widget: string }
+              - {
+                  label: 'Icon',
+                  name: 'icon',
+                  widget: 'image',
+                  choose_url: true,
+                  media_library: { config: { multiple: false } }
+                }
+              - { label: 'show', name: 'show', widget: 'boolean', default: false, required: false }
+      - label: Foto Kegiatan
+        name: gallery
+        file: 'src/shared/jsons/dataGalery.json'
+        fields:
+          - label: Posts
+            name: posts
+            widget: list
+            collapsed: false
+            fields:
+              - { label: Title, name: title, widget: string }
+              - {
+                  label: 'Featured Image',
+                  name: 'thumbnail',
+                  widget: 'image',
+                  choose_url: true,
+                  media_library: { config: { multiple: false } }
+                }
+              - {
+                  label: 'Publish At',
+                  name: 'id',
+                  widget: 'datetime',
+                  date_format: 'DD.MM.YYYY', # e.g. 24.12.2021
+                  time_format: 'HH:mm', # e.g. 21:07
+                  format: 'DDMMYYYYHHmmSSS'
+                }
+              - { label: 'Description', name: 'description', widget: 'text' }
+      - label: Video Kegiatan
+        name: video
+        file: 'src/shared/jsons/dataVideo.json'
+        fields:
+          - label: Posts
+            name: posts
+            widget: list
+            collapsed: false
+            fields:
+              - { label: Title, name: title, widget: string }
+              - {
+                  label: 'Featured Image',
+                  name: 'thumbnail',
+                  widget: 'image',
+                  choose_url: true,
+                  media_library: { config: { multiple: false } }
+                }
+              - { label: Link Youtube, name: youtube, widget: string }
+              - {
+                  label: 'Publish At',
+                  name: 'id',
+                  widget: 'datetime',
+                  date_format: 'DD.MM.YYYY', # e.g. 24.12.2021
+                  time_format: 'HH:mm', # e.g. 21:07
+                  format: 'DDMMYYYYHHmmSSS'
+                }
+              - { label: 'Description', name: 'description', widget: 'text' }
+  - label: 'Menu'
+    name: 'menu'
+    delete: false
+    editor:
+      preview: false
+    files:
+      - name: 'header'
+        label: 'Header'
+        file: 'src/shared/jsons/dataLinkHeader.json'
+        description: 'General site settings'
+        fields:
+          - label: 'Logo link'
+            name: logo
+            widget: list
+            collapsed: true
+            fields:
+              - { label: Label, name: label, widget: string }
+              - { label: URL, name: link, widget: string }
+          - label: 'Menu'
+            name: menu
+            widget: list
+            collapsed: true
+            fields:
+              - { label: Label, name: label, widget: string }
+              - { label: URL, name: url, widget: string }
+          - label: 'Simfokono Link'
+            name: dropdown
+            widget: list
+            collapsed: true
+            fields:
+              - { label: Label, name: label, widget: string }
+              - { label: URL, name: link, widget: string }
+      - name: 'footer'
+        label: 'Footer'
+        file: 'src/shared/jsons/dataLinkFooter.json'
+        description: 'General site settings'
+        fields:
+          - label: 'Menu'
+            name: menu
+            widget: list
+            collapsed: true
+            max: 3
+            fields:
+              - { label: Title, name: title, widget: string }
+              - label: 'Links'
+                name: links
+                widget: list
+                collapsed: true
+                fields:
+                  - { label: Label, name: label, widget: string }
+                  - { label: URL, name: url, widget: string }
+  - label: 'Config'
+    name: 'config'
+    delete: false
+    editor:
+      preview: false
+    files:
+      - name: 'general'
+        label: 'Site Config'
+        file: 'src/shared/jsons/siteConfig.json'
+        description: 'General site settings'
+        fields:
+          - label: 'Site Title'
+            name: 'title'
+            widget: 'string'
+            hint: 'Do not enter the trailing slash of the URL'
+          - label: 'Sub Title'
+            name: 'subtitle'
+            widget: 'string'
+          - label: 'Logo'
+            name: 'logo'
+            widget: 'image'
+            choose_url: true
+            media_library:
+              config:
+                multiple: false
+          - label: 'Navbar & Hero style'
+            name: 'heroActive'
+            widget: 'select'
+            default: 0
+            options:
+              - { label: 'Style 1', value: 1 }
+              - { label: 'Style 2', value: 2 }
+              - { label: 'Style 3', value: 3 }
+              - { label: 'Style 4', value: 4 }
+          - label: 'Theme Color'
+            name: 'themeColor'
+            widget: 'select'
+            default: primary
+            options:
+              - { label: 'primary', value: 'primary' }
+              - { label: 'secondary', value: 'secondary' }
+              - { label: 'tertiary', value: 'tertiary' }
+              - { label: 'default', value: 'default' }
+          - label: Logo
+            name: logoFooter
+            widget: list
+            fields:
+              - {
+                  label: 'Image',
+                  name: 'image',
+                  widget: 'image',
+                  choose_url: true,
+                  media_library: { config: { multiple: false } }
+                }
+          - label: About (Footer)
+            name: aboutFooter
+            widget: text
+      - name: 'linkhero'
+        label: 'Link Hero'
+        file: 'src/shared/jsons/dataLinkHero.json'
+        description: 'General site settings'
+        fields:
+          - label: Links
+            name: dataLinkHero
+            widget: list
+            max: 5
+            min: 2
+            fields:
+              - { label: Title, name: title, widget: string }
+              - label: 'Icon'
+                name: 'icon'
+                widget: 'select'
+                default: 0
+                options:
+                  - { label: 'Mega Phone', value: MegaPhone }
+                  - { label: 'Team', value: Team }
+                  - { label: 'Box', value: Box }
+                  - { label: 'Papper', value: Papper }
+                  - { label: 'Lamp', value: Lamp }
+              - { label: URL, name: url, widget: string, required: false }

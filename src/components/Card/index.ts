@@ -1,0 +1,5 @@
+export { BigNews } from './News/BigNews'
+export { HomeNews } from './News/HomeNews'
+export { PageNews } from './News/PageNews'
+export { PhotoCard } from './Photo'
+export { VideoCard } from './Video'

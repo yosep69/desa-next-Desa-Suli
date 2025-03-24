@@ -1,0 +1,46 @@
+{
+  "menu": [
+    {
+      "label": "Tentang",
+      "url": "/news/sejarah-desa-suli"
+    },
+    {
+      "label": "Artikel",
+      "url": "/news"
+    },
+    {
+      "label": "Jadwal Acara",
+      "url": "/jadwal"
+    },
+    {
+      "label": "Foto Kegiatan",
+      "url": "/photo"
+    },
+    {
+      "label": "Video Kegiatan",
+      "url": "/video"
+    }
+  ],
+  "dropdown": [
+    {
+      "link": "https://simfokono.sawala.dev/",
+      "label": "Surat Online"
+    },
+    {
+      "link": "/",
+      "label": "Monografi"
+    }
+  ],
+  "logo": [
+    {
+      "link": "https://simfokono.sawala.dev/",
+      "label": "Surat Online",
+      "logo": "/static/icons/Empelove.svg"
+    },
+    {
+      "link": "/",
+      "label": "Pengumuman",
+      "logo": "/static/icons/Megaphone.svg"
+    }
+  ]
+}

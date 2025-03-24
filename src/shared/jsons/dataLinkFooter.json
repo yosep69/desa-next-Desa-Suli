@@ -1,0 +1,59 @@
+{
+  "menu": [
+    {
+      "title": "Layanan",
+      "links": [
+        {
+          "label": "Pengumuman",
+          "url": "/"
+        },
+        {
+          "label": "Aduan Warga",
+          "url": "/"
+        },
+        {
+          "label": "Halo Bupati",
+          "url": "/"
+        },
+        {
+          "label": "Mobil Siaga",
+          "url": "/"
+        }
+      ]
+    },
+    {
+      "title": "Sosial Media",
+      "links": [
+        {
+          "label": "Facebook",
+          "url": "https://facebook.com/"
+        },
+        {
+          "label": "Instagram",
+          "url": "https://instagram.com/"
+        },
+        {
+          "label": "Twitter",
+          "url": "https://twitter.com/"
+        },
+        {
+          "label": "YouTube",
+          "url": "https://www.youtube.com/"
+        }
+      ]
+    },
+    {
+      "title": "SIMPOKONO",
+      "links": [
+        {
+          "label": "Surat Online",
+          "url": "/"
+        },
+        {
+          "label": "Pengumuman",
+          "url": "/"
+        }
+      ]
+    }
+  ]
+}

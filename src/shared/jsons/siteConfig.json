@@ -1,0 +1,22 @@
+{
+  "title": "Desa Suli",
+  "subtitle": "KEC. Balinggi, KAB. Parigi Moutong",
+  "logo": "/static/images/logo.png",
+  "heroActive": 4,
+  "themeColor": "default",
+  "logoFooter": [
+    {
+      "image": "/static/images/image1.png"
+    },
+    {
+      "image": "/static/images/image2.png"
+    },
+    {
+      "image": "/static/images/download__1_-removebg-preview-2-.png"
+    },
+    {
+      "image": "/static/images/pmd-removebg-preview-2-.png"
+    }
+  ],
+  "aboutFooter": "Sistem Informasi Pelayanan Surat Online (SIMPOKONO) adalah kanal media untuk permohonan surat secara online bagi masyarakat, pemerintah desa, dan lembaga terkait."
+}

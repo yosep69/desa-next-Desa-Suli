@@ -1,0 +1,21 @@
+@import 'tailwindcss/base';
+/* Write your own custom base styles here */
+/* Start purging... */
+@import 'tailwindcss/components';
+
+// vendor
+@import './vendors/slick/slick';
+@import './vendors/slick/slick-theme';
+
+/* Stop purging. */
+@import 'typography';
+@import 'loader';
+html,
+body {
+  scroll-behavior: smooth;
+  background-color: #fff;
+}
+/* Start purging... */
+@import 'tailwindcss/utilities';
+/* Stop purging. */
+/* Your own custom utilities */

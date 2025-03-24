@@ -1,0 +1,56 @@
+{
+  "services": [
+    {
+      "icon": "/static/images/service1.svg",
+      "title": "Surat Online",
+      "subtitle": "Buat surat online cepat via Whatsapp",
+      "show": true
+    },
+    {
+      "icon": "/static/images/service2.svg",
+      "title": "Pengumuman",
+      "subtitle": "Informasi dan pengumuman",
+      "show": true
+    },
+    {
+      "icon": "/static/images/service3.svg",
+      "title": "Aduan Warga",
+      "subtitle": "Berikan aduan, saran dan kritik",
+      "show": true
+    },
+    {
+      "icon": "/static/images/service4.svg",
+      "title": "Mobil Siaga",
+      "subtitle": "Mobil siaga untuk masyarakat",
+      "show": false
+    },
+    {
+      "icon": "/static/images/service5.svg",
+      "title": "Halo Bupati",
+      "subtitle": "Ruang aduan dan aspirasi ",
+      "show": false
+    },
+    {
+      "icon": "/static/images/service6.svg",
+      "title": "Cek PBB",
+      "subtitle": "Cek data PBB online",
+      "show": true
+    },
+    {
+      "icon": "/static/images/service6.svg",
+      "title": "Cek BPUM",
+      "subtitle": "Cek data penerima UMKM",
+      "show": false
+    },
+    {
+      "icon": "/static/images/service7.svg",
+      "title": "KTP Online",
+      "subtitle": "Layanan KTP online",
+      "show": true
+    }
+  ],
+  "about": "Wilayah Desa suli merupakan salah satu desa yang ada di Kecamatan Balinggi, Kabupaten Parigi Moutong, Provinsi Sulawesi Tengah. Luas wilayah Desa Suli sebesar 956,08 Ha, yang terdiri dari 7 dusun. Desa suli terletak -1.07501 Bujur Timur dan 120.381679 Lintang Selatan, dengan jarak 10 km dari ibu kota Kecamatan Balinggi. Wilayah Desa Suli terletak pada ketinggian antara diatas permukaan laut. Lahan di Desa Suli merupakan hamparan dataran yang sebagian adalah pemukiman dan ladang.\n\n![Luas Wilayah](/static/images/desa-suli.png \"Luas Wilayah\")",
+  "peta": "gambar_peta",
+  "gambar_peta": "/static/images/map.svg",
+  "google_maps": "<div class=\"mapouter\"><div class=\"gmap_canvas\"><iframe width=\"600\" height=\"500\" id=\"gmap_canvas\" src=\"https://maps.google.com/maps?q=kecamatan%20balinggi&t=&z=11&ie=UTF8&iwloc=&output=embed\" frameborder=\"0\" scrolling=\"no\" marginheight=\"0\" marginwidth=\"0\"></iframe><a href=\"https://www.whatismyip-address.com/divi-discount/\">divi discount</a><br><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}</style><a href=\"https://www.embedgooglemap.net\">embedded maps</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div></div>"
+}

@@ -1,0 +1,61 @@
+{
+  "posts": [
+    {
+      "id": "220520221947626",
+      "title": "Cras purus arcu nisi neque, placerat. Nisl aliquet sed viverra elementum. Faucibus massa quis.",
+      "thumbnail": "/static/images/artikel1.jpeg",
+      "description": "Description"
+    },
+    {
+      "id": "220520221947061",
+      "title": "Cras purus arcu nisi neque, placerat. Nisl aliquet sed viverra elementum. Faucibus massa quis.",
+      "thumbnail": "/static/images/artikel2.jpeg",
+      "description": "Description"
+    },
+    {
+      "id": "220520221947062",
+      "title": "Cras purus arcu nisi neque, placerat. Nisl aliquet sed viverra elementum. Faucibus massa quis.",
+      "thumbnail": "/static/images/artikel2.png",
+      "description": "Description"
+    },
+    {
+      "id": "220520221947446",
+      "title": "Cras purus arcu nisi neque, placerat. Nisl aliquet sed viverra elementum. Faucibus massa quis.",
+      "thumbnail": "/static/images/artikel4.png",
+      "description": "Description"
+    },
+    {
+      "id": "220520221947937",
+      "title": "Cras purus arcu nisi neque, placerat. Nisl aliquet sed viverra elementum. Faucibus massa quis.",
+      "thumbnail": "/static/images/artikel5.jpeg",
+      "description": "Description"
+    },
+    {
+      "id": "220520221947809",
+      "title": "Cras purus arcu nisi neque, placerat. Nisl aliquet sed viverra elementum. Faucibus massa quis.",
+      "thumbnail": "/static/images/artikel6.jpeg",
+      "description": "Description"
+    },
+    {
+      "id": "220520221948846",
+      "title": "Cras purus arcu nisi neque, placerat. Nisl aliquet sed viverra elementum. Faucibus massa quis.",
+      "thumbnail": "/static/images/artikel5.png",
+      "description": "Description"
+    },
+    {
+      "id": "220520221948325",
+      "title": "Cresss",
+      "thumbnail": "/static/images/artikel4.png"
+    },
+    {
+      "id": "230520221025667",
+      "title": "test",
+      "thumbnail": "/static/images/artikel1.jpeg"
+    },
+    {
+      "id": "230520221112068",
+      "title": "test lagi",
+      "thumbnail": "/static/images/artikel2.jpeg"
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+// DEFINE YOUR OWN FONT FROM ./fonts HERE
+// EXAMPLE:
+
+@font-face {
+  font-family: Montserrat;
+  src: url('../fonts/Montserrat/Montserrat-Thin.ttf');
+  font-weight: 100;
+  font-display: swap;
+}
+@font-face {
+  font-family: Montserrat;
+  src: url('../fonts/Montserrat/Montserrat-ExtraLight.ttf');
+  font-weight: 200;
+  font-display: swap;
+}
+@font-face {
+  font-family: Montserrat;
+  src: url('../fonts/Montserrat/Montserrat-Light.ttf');
+  font-weight: 300;
+  font-display: swap;
+}
+@font-face {
+  font-family: Montserrat;
+  src: url('../fonts/Montserrat/Montserrat-Regular.ttf');
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: Montserrat;
+  src: url('../fonts/Montserrat/Montserrat-Medium.ttf');
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: Montserrat;
+  src: url('../fonts/Montserrat/Montserrat-SemiBold.ttf');
+  font-weight: 600;
+  font-display: swap;
+}
+@font-face {
+  font-family: Montserrat;
+  src: url('../fonts/Montserrat/Montserrat-Bold.ttf');
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: Montserrat;
+  src: url('../fonts/Montserrat/Montserrat-ExtraBold.ttf');
+  font-weight: 800;
+  font-display: swap;
+}
+@font-face {
+  font-family: Montserrat;
+  src: url('../fonts/Montserrat/Montserrat-Black.ttf');
+  font-weight: 900;
+  font-display: swap;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-Montserrat font-black;
+}
+strong {
+  @apply font-black font-Montserrat;
+}
+html,
+body {
+  @apply font-Montserrat;
+}
+blockquote {
+  background: #f9f9f9;
+  border-left: 5px solid #ccc;
+  margin: 1.5em 10px;
+  opacity: 0.7;
+  padding: 1em 10px 0.1em 10px;
+  quotes: '\201C', '\201D', '\2018', '\2019';
+}

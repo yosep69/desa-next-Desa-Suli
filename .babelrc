@@ -1,0 +1,35 @@
+{
+  "plugins": [
+    ["babel-plugin-twin", { "debug": false }],
+    "babel-plugin-macros",
+    [
+      "@emotion",
+      {
+        "sourceMap": false,
+        "autoLabel": "dev-only",
+        "labelFormat": "[local]",
+        "cssPropOptimization": true
+      }
+    ],
+    [
+      "@babel/plugin-syntax-typescript", {
+        "isTSX": true
+      }
+    ]
+  ],
+  "presets": [
+    [
+      "next/babel",
+      {
+        "preset-env": {},
+        "transform-runtime": {},
+        "styled-jsx": {},
+        "class-properties": {},
+        "preset-react": {
+          "runtime": "automatic",
+          "importSource": "@emotion/react"
+        }
+      }
+    ]
+  ]
+}

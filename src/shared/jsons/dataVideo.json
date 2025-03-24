@@ -1,0 +1,59 @@
+{
+  "posts": [
+    {
+      "title": "Title 1",
+      "description": "description 1",
+      "thumbnail": "/static/images/artikel1.png",
+      "youtube": "https://www.youtube.com/watch?v=m34HqAibOfQ",
+      "id": "220520221924997"
+    },
+    {
+      "title": "Title 1",
+      "description": "description 2",
+      "thumbnail": "/static/images/artikel2.png",
+      "youtube": "https://www.youtube.com/watch?v=m34HqAibOfQ",
+      "id": "220520221924050"
+    },
+    {
+      "title": "Title 3",
+      "description": "description 3",
+      "thumbnail": "/static/images/artikel3.png",
+      "youtube": "https://www.youtube.com/watch?v=m34HqAibOfQ",
+      "id": "220520221924129"
+    },
+    {
+      "title": "Title 4",
+      "description": "description 4",
+      "thumbnail": "/static/images/artikel4.png",
+      "youtube": "https://www.youtube.com/watch?v=m34HqAibOfQ",
+      "id": "220520221924203"
+    },
+    {
+      "title": "Title 5",
+      "description": "description 5",
+      "thumbnail": "/static/images/artikel5.png",
+      "youtube": "https://www.youtube.com/watch?v=m34HqAibOfQ",
+      "id": "220520221924671"
+    },
+    {
+      "title": "Title 6",
+      "description": "description 6",
+      "thumbnail": "/static/images/artikel6.png",
+      "youtube": "https://www.youtube.com/watch?v=m34HqAibOfQ",
+      "id": "220520221924779"
+    },
+    {
+      "title": "Title 7",
+      "description": "description 6",
+      "thumbnail": "/static/images/artikel6.png",
+      "youtube": "https://www.youtube.com/watch?v=m34HqAibOfQ",
+      "id": "220520221924875"
+    },
+    {
+      "id": "230520221113833",
+      "title": "test video",
+      "thumbnail": "/static/images/artikel1.jpeg",
+      "youtube": "https://www.youtube.com/watch?v=MrjeefD8sac"
+    }
+  ]
+}
